@@ -4,7 +4,6 @@ def gen_sinewave(freqs, total_time, sample_rate):
     """
     Generates sine waves
     """
-     
     if type(freqs) == list:
         time_values = np.arange(0, total_time, 1 / sample_rate )
         signal = np.sin(2 *np.pi * freqs[0] * time_values)
